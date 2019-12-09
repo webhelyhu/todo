@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO application</title>
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="images/favicon.png" rel="icon">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">TODO app</h1>
+                <div class="h2 header__subtitle">What do you need to do?</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions__container">
+                <div id="alcim">Filter: </div>
+                <input id="searcher" placeholder="filter text" type="text" class="input">
+                <label class="checkbox">
+                    Hide completed?
+                    <input type="checkbox" id="hide-completed">
+                </label>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="hide-comp-div"></div>
+            <div id="todos"></div>
+            <form id="new-form">
+                <input id="new-todo-text" type="text" placeholder="New todo text" name="newTodoText" class="input">
+                <button class="button">Add todo</button>
+            </form>
+        </div>
+
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/todo-functions.js"></script>
+        <script src="scripts/todos.js"></script>
+    </body>
+</html>
